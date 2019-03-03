@@ -12,6 +12,7 @@ a, a:hover,button,button:hover,.anime{
   transition:all 200ms linear;
   cursor:pointer;
 }
+/*Flex Framework*/
 .main_flex{
   display: flex;
   display: -webkit-flex;
@@ -24,9 +25,51 @@ a, a:hover,button,button:hover,.anime{
   -webkit-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
+.flex__auto{
+  flex:auto;
+  -webkit-flex:auto;
+  -ms-flex:auto;
+}
+.flex__jkontent-between{
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.flex__jcontent_start{
+  justify-content: flex-start;
+  -webkit-justify-content:flex-start;
+}
+.flex__content_end{
+  justify-content: flex-end;
+  -webkit-justify-content:flex-end;
+}
+
 .flex__jcontent_center{
   justify-content:center;
   -webkit-justify-content:center;
+}
+.flex__jcontent_around{
+  justify-content: space-around;
+  -webkit-justify-content:space-around;
+}
+.flex__align-content_stretch{
+  align-content: stretch;
+  -webkit-align-content:stretch;
+}
+.flex__flex-grow_01{
+  flex-grow:1;
+  -webkit-flex-grow:1;
+}
+.flex__flex-grow_02{
+  flex-grow:2;
+  -webkit-flex-grow:2;
+}
+.flex__flex-grow_03{
+  flex-grow:3;
+  -webkit-flex-grow:3;
+}
+.flex__flex-grow_04{
+  flex-grow:4;
+  -webkit-flex-grow:4;
 }
 
 
