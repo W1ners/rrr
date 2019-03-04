@@ -4,10 +4,9 @@
   -ms-box-sizing:border-box;
   box-sizing:border-box;
 }
-
 body {
   font-family:FuturaDemiC;
-background:#fff;
+  background:#fff;
 }
 header {
   background:url(images/bg.jpg) no repet;
@@ -28,12 +27,7 @@ header {
   background: linear-gradient(to right, rgba(142,178,172,0.2) 0%,rgba(36,43,46,0.7) 100%,rgba(36,43,46,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb2ac', endColorstr='#242b2e',GradientType=1 ); /* IE6-9 */
   box-shadow: 1px 1px 20px 0px black;
-
-
-
-
 }
-
   .logo {
     display: flex;
     flex-direction: row;
@@ -41,8 +35,6 @@ header {
     width: 100%;
     height:11.57vh;
     background-color: #fff
-
-
   }
 
   .logo .st0{fill:#A0BBFF;stroke:#666666;stroke-miterlimit:10;}
@@ -59,12 +51,11 @@ header {
 .logo svg {
   width: 11vw;
 }
-.conteiner_form{
+.conteiner_form {
   float: right;
   text-align: right;
-
 }
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"] {
   width: 200px;
   height: 30px;
   font-size: 15px;
@@ -72,27 +63,23 @@ input[type="text"],input[type="password"]{
   border-radius: 5px;
   padding-left: 10px;
   font-family:cursive;
-
 }
-.dvs-submit{
+.dvs-submit {
   padding: 10px 25px;
   margin-left: 25px;
   font-size: 12px;
   color: #272425;
   background-color: #8eb2ac;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb2ac+0,242b2e+100,242b2e+100 */
-background: rgb(142,178,172); /* Old browsers */
-background: -moz-linear-gradient(left, rgba(142,178,172,1) 0%, rgba(36,43,46,1) 100%, rgba(36,43,46,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(142,178,172,1) 0%,rgba(36,43,46,1) 100%,rgba(36,43,46,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(142,178,172,1) 0%,rgba(36,43,46,1) 100%,rgba(36,43,46,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb2ac', endColorstr='#242b2e',GradientType=1 ); /* IE6-9 */
-
+  background: rgb(142,178,172); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(142,178,172,1) 0%, rgba(36,43,46,1) 100%, rgba(36,43,46,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(142,178,172,1) 0%,rgba(36,43,46,1) 100%,rgba(36,43,46,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(142,178,172,1) 0%,rgba(36,43,46,1) 100%,rgba(36,43,46,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb2ac', endColorstr='#242b2e',GradientType=1 ); /* IE6-9 */
 }
-.vspass{
+.vspass {
   margin-left: 25px;
   color:#272425
 }
-
 .main_nav a {
   text-decoration: none;
   color:#fff;
@@ -106,19 +93,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb2ac', end
   align-content: center;
   align-items: center;
   margin: 25px;
-
-
-
-
 }
-nav li{
+nav li {
   list-style: none;
-
 }
-.menu_nav:hover{
+.menu_nav:hover {
   background-color: rgba(255, 0, 0, 0.5);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   border-radius: 1px;
+}
+.body_slides {
+  list-style:none;
+  margin:0;
+  padding:0;
+  z-index:-2;
+  background:#222830;
+}
+.body_slides,
+.body_slides:after {
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;}
+.body_slides:after {
+    content: '';
+  background: transparent url(images/pattern.png) repeat top left;}
+
+@-webkit-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+.body_slides li {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-size:cover;
+  background-repeat:none;
+  opacity:0;
+  -webkit-animation: anim_slides 18s linear infinite 0s;
+  -moz-animation: anim_slides 18s linear infinite 0s;
+  -o-animation: anim_slides 18s linear infinite 0s;
+  -ms-animation: anim_slides 18s linear infinite 0s;
+  animation: anim_slides 18s linear infinite 0s;
+}
+.body_slides li:nth-child(1) {
+background-image: url(images/bg1.jpg)
+}
+.body_slides li:nth-child(2) {
+-webkit-animation-delay: 6.0s;
+-moz-animation-delay: 6.0s;
+background-image: url(images/bg2.jpg)
+}
+.body_slides li:nth-child(3) {
+-webkit-animation-delay: 12.0s;
+-moz-animation-delay: 12.0s;
+background-image: url(images/bg3.jpg)
 }

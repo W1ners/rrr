@@ -4,78 +4,9 @@
 	<meta charset="UTF-8">
 	 <link rel="stylesheet" href="css/main.css" type="text/css"/>
 	<title>MySite</title>
-	<style>
 
-	.body_slides{
-		list-style:none;
-		margin:0;
-		padding:0;
-		z-index:-2;
-		background:#222830;}
-	.body_slides,
-	.body_slides:after{
-	    position: fixed;
-		width:100%;
-		height:100%;
-		top:0px;
-		left:0px;}
-	.body_slides:after {
-	    content: '';
-		background: transparent url(images/pattern.png) repeat top left;}
-
-	@-webkit-keyframes anim_slides {
-	0% {opacity:0;}
-	6% {opacity:1;}
-	24% {opacity:1;}
-	30% {opacity:0;}
-	100% {opacity:0;}
-	}
-	@-moz-keyframes anim_slides {
-	0% {opacity:0;}
-	6% {opacity:1;}
-	24% {opacity:1;}
-	30% {opacity:0;}
-	100% {opacity:0;}
-	}
-	.body_slides li{
-	    width:100%;
-		height:100%;
-		position:absolute;
-		top:0;
-		left:0;
-	    background-size:cover;
-	    background-repeat:none;
-		opacity:0;
-	    -webkit-animation: anim_slides 18s linear infinite 0s;
-	    -moz-animation: anim_slides 18s linear infinite 0s;
-	    -o-animation: anim_slides 18s linear infinite 0s;
-	    -ms-animation: anim_slides 18s linear infinite 0s;
-	    animation: anim_slides 18s linear infinite 0s;
-	}
-
-	.body_slides li:nth-child(1){
-	background-image: url(images/bg1.jpg)
-	}
-	.body_slides li:nth-child(2){
-	-webkit-animation-delay: 6.0s;
-	-moz-animation-delay: 6.0s;
-	background-image: url(images/bg2.jpg)
-	}
-	.body_slides li:nth-child(3){
-	-webkit-animation-delay: 12.0s;
-	-moz-animation-delay: 12.0s;
-	background-image: url(images/bg3.jpg)
-	}
-	</style>
 </head>
 <body>
-
-	<style>
-	   body {
-	    background: #c7b39b url(images/bg3.jpg); /* Цвет фона и путь к файлу */
-	    color: #fff; /* Цвет текста */
-	   }
-	  </style>
 <header>
 	<div class="logo">
 		<?xml version="1.0" encoding="utf-8"?>
