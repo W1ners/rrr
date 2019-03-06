@@ -9,7 +9,6 @@ body {
   background:#fff;
 }
 header {
-  background:url(images/bg.jpg) no repet;
   display: flex;
   flex-direction: column;
   flex-basis: auto;
@@ -17,8 +16,8 @@ header {
   top: 0;
   left: 0;
   z-index: 50;
-  height: 100vh;
-  width: 15.62vw;
+  height: 100%;
+  width: 15.62%;
   background-color: #242b2e;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb2ac+0,242b2e+100,242b2e+100 */
   background: rgba(142,178,172,0.2); /* Old browsers */
@@ -123,18 +122,18 @@ nav li {
   background: transparent url(images/pattern.png) repeat top left;}
 
 @-webkit-keyframes anim_slides {
-0% {opacity:0;}
-6% {opacity:1;}
-24% {opacity:1;}
-30% {opacity:0;}
-100% {opacity:0;}
+  0% {opacity:0;}
+  6% {opacity:1;}
+  24% {opacity:1;}
+  30% {opacity:0;}
+  100% {opacity:0;}
 }
 @-moz-keyframes anim_slides {
-0% {opacity:0;}
-6% {opacity:1;}
-24% {opacity:1;}
-30% {opacity:0;}
-100% {opacity:0;}
+  0% {opacity:0;}
+  6% {opacity:1;}
+  24% {opacity:1;}
+  30% {opacity:0;}
+  100% {opacity:0;}
 }
 .body_slides li {
   width:100%;
@@ -152,15 +151,28 @@ nav li {
   animation: anim_slides 18s linear infinite 0s;
 }
 .body_slides li:nth-child(1) {
-background-image: url(images/bg1.jpg)
+  background-image: url(images/bg1.jpg)
 }
 .body_slides li:nth-child(2) {
--webkit-animation-delay: 6.0s;
--moz-animation-delay: 6.0s;
-background-image: url(images/bg2.jpg)
+  -webkit-animation-delay: 6.0s;
+  -moz-animation-delay: 6.0s;
+  background-image: url(images/bg2.jpg)
 }
 .body_slides li:nth-child(3) {
--webkit-animation-delay: 12.0s;
--moz-animation-delay: 12.0s;
-background-image: url(images/bg3.jpg)
+  -webkit-animation-delay: 12.0s;
+  -moz-animation-delay: 12.0s;
+  ackground-image: url(images/bg3.jpg)
+}
+.head-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #fff;
+  z-index: 10;
+  border: 3px;
+  border-color: #000
+  top: 0;
+  left: 300px;
+  height: 11.57%;
+  width: 85%;
 }
